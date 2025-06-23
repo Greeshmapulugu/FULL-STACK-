@@ -1,0 +1,17 @@
+my-ecom-app/
+├── app.js            
+├── config/
+│   └── db.js         
+├── models/
+│   ├── User.js
+│   ├── Product.js
+│   └── Cart.js
+├── routes/
+│   ├── auth.js       
+│   ├── products.js
+│   └── cart.js
+├── middleware/
+│   └── authMiddleware.js
+├── controllers/
+│   └── authController.js
+└── package.json
