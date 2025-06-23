@@ -1,0 +1,15 @@
+. Example of Protected Route (routes/products.js)
+const router = require('express').Router();
+const auth = require('../middleware/authMiddleware');
+
+router.get('/', (req, res) => {
+  // Return product list
+  res.json([]);
+});
+
+router.post('/', auth, (req, res) => {
+  // Create product (admin only, use req.user.id)
+  res.status(201).json({ message: 'Product created' });
+});
+
+module.exports = router;
